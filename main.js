@@ -4,11 +4,15 @@ Write a function that takes a single non-empty string of only lowercase and uppe
 
 **/
 
-var capitals = function (word) {
-    var caps = [];
-      for(var i = 0; i < word.length; i++) {
-      if(word[i].toUpperCase() == word[i]) caps.push(i);
+function capitals(word){
+    capitalIndexNumber = [];
+    for (let i = 0; i < word.length; i++){
+        if (word[i].toUpperCase() == word[i]){  //this is giving the comparison. That if the letter at w.e index (it being capital) is equal to a capital. Then push that array value into the empty array
+            capitalIndexNumber.push(i)
+        }
     }
-    return caps;
-  };
-console.log(capitals("word"))
+    return capitalIndexNumber
+
+}
+
+console.log(capitals("WoRDs"))
