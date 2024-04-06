@@ -16,3 +16,16 @@ function capitals(word){
 }
 
 console.log(capitals("WoRDs"))
+
+
+function lowerCase(word){
+    lowerCaseNumberIndex = []
+    for (let i = 0; i < word.length; i++){
+        if (word[i].toLowerCase() == word[i]){
+            lowerCaseNumberIndex.push(i)
+        }
+    }
+    return lowerCaseNumberIndex
+}
+
+console.log(lowerCase("JONaTHon"))
